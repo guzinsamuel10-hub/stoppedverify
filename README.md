@@ -82,7 +82,7 @@ local keyMapping = {
     ["05F0B3062BD09F5A"] = "aruan_xit",
     ["09A3325CB0A723A1"] = "verdecabuloso_",
     ["VIP-E14D7AA5-14C829EE"] = "guhzin4k",
-    ["3D66BD5737E3942F"] = "guhzin4k",
+    ["GUGOSTOSAO"] = "guhzin4k",
     ["024276590A3BD60E"] = "guhzin4k",
 }
 -- ==============================================
@@ -96,6 +96,7 @@ local VIP_KEYS = {
     ["VIP-49162DC8-FFD6D33D"] = true,
     ["VIP-8EFB5E8F-A8084E6A"] = true,
     ["VIP-4213A4C4-6D5C0282"] = true,
+    ["GUGOSTOSAO"] = true,
 }
 
 -- util helpers
