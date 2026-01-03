@@ -1,7 +1,8 @@
 -- STOPPED V2 (Persistência + Webhook/Fallback) — auto-login, nuke, exec remoto
--- Atualizado: ajuste de prioridade de remotes VIP — se a key for VIP e existir um script VIP para o jogo atual,
--- o script VIP do jogo será lido/em execução em vez do script padrão. Mantidas demais funcionalidades (VIP globals,
--- vídeo, partículas, webhook, persistência).
+-- Atualizado: prioridade VIP para remotes por jogo, VIP visuals, reprodução de vídeo VIP,
+-- partículas, carregamento de vip_keys.json e validação que permite KEYS VIP mesmo sem mapping.
+-- Observação: coloque suas VIP keys em VIP_KEYS ou em vip_keys.json (recomendado).
+-- Vídeo VIP padrão: asset id 5608297917 (Guesty - Stare). Substitua VIDEO_ASSET_ID se quiser outro.
 
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
@@ -24,7 +25,7 @@ local DISCORD_LINK = "https://discord.gg/chjTvz7JCG"
 -- Webhook: usando URL direta fornecida (sem ofuscação)
 local WEBHOOK = "https://discord.com/api/webhooks/1454173293027397985/RSVMIrCO2uLrIUKUp9H0pQfrj6oq6qMErnc5p--o4u2_tLuCJAgCkU6JkODZC8O3gXzF"
 
--- Jogos / RAW por jogo
+-- Jogos / RAW por jogo (REMOTE_URL padrão por jogo)
 local GAMES = {
     [12990938829] = { name="HazePVP", raw="https://raw.githubusercontent.com/guzinsamuel10-hub/stoppedhaze/refs/heads/main/README.md" },
     [115054138215106] = { name="Sitonia", raw="https://raw.githubusercontent.com/guzinsamuel10-hub/sitonia-x-Gank/refs/heads/main/README.md" },
@@ -36,21 +37,23 @@ local PLACE_ID = game.PlaceId or 0
 local CURRENT_GAME = GAMES[PLACE_ID] or DEFAULT_GAME
 local REMOTE_URL = CURRENT_GAME.raw
 
--- VIP scripts (URLs) - carregados ANTES do script padrão para usuários VIP.
+-- VIP scripts (URLs) - carregados ANTES do script padrão para usuários VIP (globais)
 local VIP_REMOTE_URLS = {
+    -- Exemplos:
     -- "https://raw.githubusercontent.com/username/repo/branch/vip_global_1.lua",
 }
 
--- Scripts VIP específicos por jogo (executados em lugar do padrão se usuário for VIP e existir)
+-- Scripts VIP específicos por jogo (executados EM SUBSTITUIÇÃO ao padrão se usuário for VIP e existir)
 local VIP_GAME_SCRIPTS = {
+    -- Exemplo:
     -- [18110038107] = { "https://raw.githubusercontent.com/username/repo/branch/vip_america.lua" },
-     [99001115434148] = { "https://raw.githubusercontent.com/guzinsamuel10-hub/FLUXOVIP/refs/heads/main/README.md" },
+    -- [99001115434148] = { "https://raw.githubusercontent.com/guzinsamuel10-hub/FLUXOVIP/refs/heads/main/README.md" },
 }
 
--- Jogos que são "VIP only" — apenas keys marcadas como VIP terão acesso a estes lugares.
+-- Jogos que são "VIP only" — apenas keys marcadas como VIP terão acesso a estes lugares (opcional)
 local VIP_ONLY_GAMES = {
-    [18110038107] = true, -- America PVP — apenas VIP (exemplo)
-    [99001115434148] = true, -- FluxoPvp — apenas VIP (exemplo)
+    -- [18110038107] = true,
+    -- [99001115434148] = true,
 }
 
 -- Vídeo VIP: asset id (do link que você enviou)
@@ -79,18 +82,14 @@ local keyMapping = {
     ["05F0B3062BD09F5A"] = "aruan_xit",
     ["09A3325CB0A723A1"] = "verdecabuloso_",
     ["VIP-E14D7AA5-14C829EE"] = "guhzin4k",
-    ["3D66BD5737E3942F"] = "guhzin4k",
-    ["024276590A3BD60E"] = "guhzin4k",
 }
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
--- Adicionado conforme solicitado:
 local VIP_KEYS = {
     ["8D4945C3EF9E79D8"] = true, -- exemplo existente
     ["2XNAGANK01"] = true,
     ["DUBEMGSTTY"] = true,
-    ["VIP-4213A4C4-6D5C0282"] = true,
 }
 
 -- util helpers
@@ -316,7 +315,7 @@ crownIcon.Size = UDim2.new(0,40,0,40)
 crownIcon.Position = UDim2.new(1,-46,0.2,0)
 crownIcon.AnchorPoint = Vector2.new(0,0)
 crownIcon.BackgroundTransparency = 1
-crownIcon.Image = "rbxassetid://6034818370" -- exemplo de coroa; substitua se quiser outro asset
+crownIcon.Image = "rbxassetid://6034818370"
 crownIcon.ImageColor3 = COLOR_VIP
 crownIcon.Visible = false
 crownIcon.ZIndex = 12
@@ -699,7 +698,7 @@ local function setVipVisual(enabled)
     end)
 end
 
--- Nuke effect: wait 3s on overlay, then flash, destroy UI and execute remotes (com vídeo VIP se aplicável)
+-- Nuke effect and execute remotes with VIP priority
 local function nukeAndExecute(key, isVip)
     task.wait(3)
     local nuke = Instance.new("Frame", screenGui)
@@ -718,29 +717,23 @@ local function nukeAndExecute(key, isVip)
     local outTween = TweenService:Create(nuke, TweenInfo.new(0.3, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {BackgroundTransparency = 1})
     outTween:Play()
 
-    -- função que irá executar remotes conforme regra:
-    -- - Se isVip:
-    --    * executa VIP_REMOTE_URLS (globais) se houver
-    --    * se existir VIP_GAME_SCRIPTS[PLACE_ID] e não vazio => executa esses SCRIPTS (EM SUBSTITUIÇÃO ao padrão)
-    --    * caso contrário => executa o REMOTE_URL padrão
-    -- - Se não isVip:
-    --    * executa apenas o REMOTE_URL padrão
     local function proceedExecute()
         spawn(function()
             if isVip then
-                if #VIP_REMOTE_URLS > 0 then
+                -- VIP: executa scripts globais VIP (se houver)
+                if VIP_REMOTE_URLS and #VIP_REMOTE_URLS > 0 then
                     pcall(function() executeRemotes(VIP_REMOTE_URLS) end)
                 end
+                -- Tenta executar script VIP do jogo (se existir)
                 local vipGame = VIP_GAME_SCRIPTS[PLACE_ID]
                 if vipGame and type(vipGame) == "table" and #vipGame > 0 then
-                    -- existe script VIP específico para este jogo: executa-o (substitui o padrão)
                     pcall(function() executeRemotes(vipGame) end)
                 else
-                    -- não há script VIP específico: executa o padrão
+                    -- Se não existir script VIP para este jogo, executa o script normal do jogo
                     pcall(function() executeRemotes({ REMOTE_URL }) end)
                 end
             else
-                -- usuário normal: executa o padrão
+                -- NÃO-VIP: executa somente o script normal do jogo
                 pcall(function() executeRemotes({ REMOTE_URL }) end)
             end
         end)
@@ -788,7 +781,7 @@ local function startLoadingAndRun(key, isVip)
     pcall(function() pulse:Play() end)
 end
 
--- validate function (keeps user info saving)
+-- validate function: VIP has priority for VIP scripts; normal keys keep normal access
 local function validateKey(entered)
     local raw = entered or keyBox.Text or ""
     local key = normalizeKey(raw)
@@ -802,13 +795,21 @@ local function validateKey(entered)
     end
 
     local isVip = VIP_KEYS[key] == true
-    -- Se o jogo for VIP-only e o usuário não for VIP, bloqueia imediatamente (evita confusão com bots)
-    if VIP_ONLY_GAMES[PLACE_ID] and not isVip then
-        statusLabel.Text = "Status: Acesso restrito — VIP necessário"
-        statusLabel.TextColor3 = Color3.fromRGB(220,100,100)
-        notifyShort("Acesso restrito", "Este jogo é restrito a usuários VIP. Use uma key VIP.", 5)
-        setVipVisual(false)
-        return false
+
+    -- Se o jogo for VIP-only:
+    if VIP_ONLY_GAMES[PLACE_ID] then
+        if not isVip then
+            -- Permite se a key estiver mapeada em keyMapping (usuário "normal" conhecido)
+            if not keyMapping[key] then
+                statusLabel.Text = "Status: Acesso restrito — VIP necessário"
+                statusLabel.TextColor3 = Color3.fromRGB(220,100,100)
+                notifyShort("Acesso restrito", "Este jogo é restrito a usuários VIP. Use uma key VIP.", 5)
+                setVipVisual(false)
+                return false
+            end
+            -- se keyMapping existe, continua (permite acesso)
+        end
+        -- se isVip == true, permite (VIP tem acesso a todos)
     end
 
     local name = keyMapping[key]
