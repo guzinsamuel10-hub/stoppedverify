@@ -84,6 +84,7 @@ local keyMapping = {
     ["VIP-E14D7AA5-14C829EE"] = "guhzin4k",
     ["GUGOSTOSAO"] = "guhzin4k",
     ["024276590A3BD60E"] = "guhzin4k",
+    ["3D66BD5737E3942F"] = "guhzin4k",
 }
 -- ==============================================
 
