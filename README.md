@@ -46,11 +46,13 @@ local VIP_REMOTE_URLS = {
 -- Scripts VIP específicos por jogo (executados antes do padrão se usuário for VIP)
 local VIP_GAME_SCRIPTS = {
     -- [18110038107] = { "https://raw.githubusercontent.com/username/repo/branch/vip_america.lua" },
+     -- [99001115434148] = { "https://raw.githubusercontent.com/guzinsamuel10-hub/FLUXOVIP/refs/heads/main/README.md" },
 }
 
 -- Jogos que são "VIP only" — apenas keys marcadas como VIP terão acesso a estes lugares.
 local VIP_ONLY_GAMES = {
     [18110038107] = true, -- America PVP — apenas VIP (exemplo)
+     [99001115434148] = true, -- FluxoPvp — apenas VIP (exemplo)
 }
 
 -- Vídeo VIP: asset id (do link que você enviou)
