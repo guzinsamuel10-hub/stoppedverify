@@ -89,6 +89,7 @@ local VIP_KEYS = {
     ["2XNAGANK01"] = true,
     ["DUBEMGSTTY"] = true,
     ["VIP-0C6495E0-B8C6FE61"] = true,
+    ["VIP-8EFB5E8F-A8084E6A"] = true,
 }
 
 -- util helpers
