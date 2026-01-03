@@ -85,6 +85,7 @@ local keyMapping = {
     ["GUGOSTOSAO"] = "guhzin4k",
     ["024276590A3BD60E"] = "guhzin4k",
     ["3D66BD5737E3942F"] = "guhzin4k",
+    ["0895B07F4CE2855F"] = "aruan_xit",
 }
 -- ==============================================
 
