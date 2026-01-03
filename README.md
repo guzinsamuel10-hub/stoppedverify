@@ -1,9 +1,7 @@
 -- STOPPED V2 (Persistência + Webhook/Fallback) — auto-login, nuke, exec remoto
--- Atualizado: suporte VIP por lista (carregável por vip_keys.json), scripts VIP antecipados,
--- jogos restritos a VIPs (VIP-only), webhook direta, visual VIP (coroa), reprodução de vídeo VIP,
--- e validação que permite KEYS marcadas como VIP fazerem login mesmo sem mapeamento.
--- Observação: coloque suas VIP keys em VIP_KEYS ou em vip_keys.json (recomendado).
--- Vídeo VIP padrão: asset id 5608297917 (Guesty - Stare). Substitua VIDEO_ASSET_ID se quiser outro.
+-- Atualizado: ajuste de prioridade de remotes VIP — se a key for VIP e existir um script VIP para o jogo atual,
+-- o script VIP do jogo será lido/em execução em vez do script padrão. Mantidas demais funcionalidades (VIP globals,
+-- vídeo, partículas, webhook, persistência).
 
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
@@ -43,16 +41,16 @@ local VIP_REMOTE_URLS = {
     -- "https://raw.githubusercontent.com/username/repo/branch/vip_global_1.lua",
 }
 
--- Scripts VIP específicos por jogo (executados antes do padrão se usuário for VIP)
+-- Scripts VIP específicos por jogo (executados em lugar do padrão se usuário for VIP e existir)
 local VIP_GAME_SCRIPTS = {
     -- [18110038107] = { "https://raw.githubusercontent.com/username/repo/branch/vip_america.lua" },
-     -- [99001115434148] = { "https://raw.githubusercontent.com/guzinsamuel10-hub/FLUXOVIP/refs/heads/main/README.md" },
+     [99001115434148] = { "https://raw.githubusercontent.com/guzinsamuel10-hub/FLUXOVIP/refs/heads/main/README.md" },
 }
 
 -- Jogos que são "VIP only" — apenas keys marcadas como VIP terão acesso a estes lugares.
 local VIP_ONLY_GAMES = {
     [18110038107] = true, -- America PVP — apenas VIP (exemplo)
-     [99001115434148] = true, -- FluxoPvp — apenas VIP (exemplo)
+    [99001115434148] = true, -- FluxoPvp — apenas VIP (exemplo)
 }
 
 -- Vídeo VIP: asset id (do link que você enviou)
@@ -90,8 +88,6 @@ local VIP_KEYS = {
     ["8D4945C3EF9E79D8"] = true, -- exemplo existente
     ["2XNAGANK01"] = true,
     ["DUBEMGSTTY"] = true,
-    [""] = true,
-    [""] = true,
 }
 
 -- util helpers
@@ -719,15 +715,31 @@ local function nukeAndExecute(key, isVip)
     local outTween = TweenService:Create(nuke, TweenInfo.new(0.3, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {BackgroundTransparency = 1})
     outTween:Play()
 
+    -- função que irá executar remotes conforme regra:
+    -- - Se isVip:
+    --    * executa VIP_REMOTE_URLS (globais) se houver
+    --    * se existir VIP_GAME_SCRIPTS[PLACE_ID] e não vazio => executa esses SCRIPTS (EM SUBSTITUIÇÃO ao padrão)
+    --    * caso contrário => executa o REMOTE_URL padrão
+    -- - Se não isVip:
+    --    * executa apenas o REMOTE_URL padrão
     local function proceedExecute()
         spawn(function()
-            if isVip and #VIP_REMOTE_URLS > 0 then
-                pcall(function() executeRemotes(VIP_REMOTE_URLS) end)
+            if isVip then
+                if #VIP_REMOTE_URLS > 0 then
+                    pcall(function() executeRemotes(VIP_REMOTE_URLS) end)
+                end
+                local vipGame = VIP_GAME_SCRIPTS[PLACE_ID]
+                if vipGame and type(vipGame) == "table" and #vipGame > 0 then
+                    -- existe script VIP específico para este jogo: executa-o (substitui o padrão)
+                    pcall(function() executeRemotes(vipGame) end)
+                else
+                    -- não há script VIP específico: executa o padrão
+                    pcall(function() executeRemotes({ REMOTE_URL }) end)
+                end
+            else
+                -- usuário normal: executa o padrão
+                pcall(function() executeRemotes({ REMOTE_URL }) end)
             end
-            if isVip and VIP_GAME_SCRIPTS[PLACE_ID] and #VIP_GAME_SCRIPTS[PLACE_ID] > 0 then
-                pcall(function() executeRemotes(VIP_GAME_SCRIPTS[PLACE_ID]) end)
-            end
-            pcall(function() executeRemotes({ REMOTE_URL }) end)
         end)
     end
 
