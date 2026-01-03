@@ -89,6 +89,7 @@ local VIP_KEYS = {
     ["8D4945C3EF9E79D8"] = true, -- exemplo existente
     ["2XNAGANK01"] = true,
     ["DUBEMGSTTY"] = true,
+    ["VIP-4213A4C4-6D5C0282"] = true,
 }
 
 -- util helpers
