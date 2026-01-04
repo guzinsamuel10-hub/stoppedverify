@@ -90,6 +90,7 @@ local keyMapping = {
     ["C3B3F236CAEE8126"] = "aura_22.",
     ["5D298CCA0930BA69"] = "ilusaodo7",
     ["83F7B9FDEEA3CF3E"] = "rlkpixote00",
+    ["E5348BA3C3B58714"] = "rarinxiste",
 }
 -- ==============================================
 
