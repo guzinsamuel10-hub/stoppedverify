@@ -88,6 +88,7 @@ local keyMapping = {
     ["83ECE91C2641A9AC"] = "justica3paz.",
     ["32F8C978B4364EC8"] = "gustta0671",
     ["C3B3F236CAEE8126"] = "aura_22.",
+    ["5D298CCA0930BA69"] = "ilusaodo7",
 }
 -- ==============================================
 
