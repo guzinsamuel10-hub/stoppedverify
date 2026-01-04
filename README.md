@@ -85,7 +85,6 @@ local keyMapping = {
     ["GUGOSTOSAO"] = "guhzin4k",
     ["024276590A3BD60E"] = "guhzin4k",
     ["3D66BD5737E3942F"] = "guhzin4k",
-    ["83ECE91C2641A9AC"] = "justica3paz.",
     ["32F8C978B4364EC8"] = "gustta0671",
     ["C3B3F236CAEE8126"] = "aura_22.",
     ["5D298CCA0930BA69"] = "ilusaodo7",
