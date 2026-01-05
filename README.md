@@ -88,7 +88,6 @@ local keyMapping = {
     ["B0417B8F7E44F308"] = "justica3paz.",
     ["45C6079F9FD1ABEF"] = "sem.mira",
     ["BC13B34E4E0B0C7F"] = "juliazx17",
-    ["52D145329EFC5F5A"] = "vinijoga3704",
     ["26E78058FDB24830"] = "aura_22.",
     ["4B1E60A00167B7BD"] = "epsk.",
     ["E8227FBB931433CF"] = "epsk.",
