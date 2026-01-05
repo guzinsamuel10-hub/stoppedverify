@@ -93,6 +93,7 @@ local keyMapping = {
     ["4B1E60A00167B7BD"] = "epsk.",
     ["E8227FBB931433CF"] = "epsk.",
     ["CC0D3DF12BF2C82A"] = "ilusaodo7",
+    ["F8495CED49F4BDDE"] = "epsk.",
 }
 -- ==============================================
 
