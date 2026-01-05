@@ -85,7 +85,6 @@ local keyMapping = {
     ["GUGOSTOSAO"] = "guhzin4k",
     ["024276590A3BD60E"] = "guhzin4k",
     ["3D66BD5737E3942F"] = "guhzin4k",
-    ["45C6079F9FD1ABEF"] = "sem.mira",
     ["BC13B34E4E0B0C7F"] = "juliazx17",
     ["26E78058FDB24830"] = "aura_22.",
     ["4B1E60A00167B7BD"] = "epsk.",
