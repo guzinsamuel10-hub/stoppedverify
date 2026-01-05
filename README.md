@@ -91,6 +91,7 @@ local keyMapping = {
     ["0A41DC9F8E25DE4A"] = "aruan_xit",
     ["578EB72A2E617E52"] = "lucass_0104",
     ["0FB2F5F02047FE68"] = "sem.mira",
+    ["F32789DEEC7EA548"] = "aura_22.",
 }
 -- ==============================================
 
