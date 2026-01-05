@@ -87,6 +87,7 @@ local keyMapping = {
     ["3D66BD5737E3942F"] = "guhzin4k",
     ["B0417B8F7E44F308"] = "justica3paz.",
     ["45C6079F9FD1ABEF"] = "sem.mira",
+    ["BC13B34E4E0B0C7F"] = "juliazx17",
 }
 -- ==============================================
 
