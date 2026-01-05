@@ -93,6 +93,7 @@ local keyMapping = {
     ["E8227FBB931433CF"] = "epsk.",
     ["CC0D3DF12BF2C82A"] = "ilusaodo7",
     ["F8495CED49F4BDDE"] = "epsk.",
+    ["778F74F20FBC8550"] = "aura_22.",
 }
 -- ==============================================
 
