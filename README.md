@@ -92,7 +92,6 @@ local keyMapping = {
     ["778F74F20FBC8550"] = "aura_22.",
     ["E2785B51D947CA19"] = "epsk.",
     ["A9BA8176C8A5B1EA"] = "epsk.",
-    ["1A80F4D47A45A372"] = "brabo.yt.ns7467",
     ["A005F9AF17109C5E"] = "epsk.",
     ["0C44F83A059E4A89"] = "epsk.",
     ["593EA30B449E45B0"] = "epsk.",
