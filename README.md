@@ -97,7 +97,6 @@ local VIP_KEYS = {
     ["VIP-0C6495E0-B8C6FE61"] = true,
     ["VIP-49162DC8-FFD6D33D"] = true,
     ["VIP-8EFB5E8F-A8084E6A"] = true,
-    ["VIP-4213A4C4-6D5C0282"] = true,
     ["GUGOSTOSAO"] = true,
     ["VIP-548EAED7-B3FE8085"] = true,
     ["VIP-1C9907BD-A790E519"] = true,
