@@ -96,6 +96,7 @@ local keyMapping = {
     ["4B032A9873B1F4CF"] = "aruan_xit",
     ["6F9E6B5E37E56014"] = "kayomcoficial",
     ["B769A84271DED708"] = "datdl011",
+    ["52CFB3235B927A6B"] = "brabo.yt.ns7467",
 }
 -- ==============================================
 
