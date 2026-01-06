@@ -88,7 +88,6 @@ local keyMapping = {
     ["4B1E60A00167B7BD"] = "epsk.",
     ["E8227FBB931433CF"] = "epsk.",
     ["F8495CED49F4BDDE"] = "epsk.",
-    ["778F74F20FBC8550"] = "aura_22.",
     ["E2785B51D947CA19"] = "epsk.",
     ["A9BA8176C8A5B1EA"] = "epsk.",
     ["A005F9AF17109C5E"] = "epsk.",
