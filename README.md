@@ -93,7 +93,6 @@ local keyMapping = {
     ["593EA30B449E45B0"] = "epsk.",
     ["89A3870E5B3B8C6E"] = "rlkpixote00",
     ["4B032A9873B1F4CF"] = "aruan_xit",
-    ["6F9E6B5E37E56014"] = "kayomcoficial",
     ["B769A84271DED708"] = "datdl011",
     ["52CFB3235B927A6B"] = "brabo.yt.ns7467",
     ["9556BF13298D183F"] = "ilusaodo7",
