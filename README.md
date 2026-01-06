@@ -98,6 +98,7 @@ local keyMapping = {
     ["9556BF13298D183F"] = "ilusaodo7",
     ["1088C7EB38F3566E"] = "justica3paz.",
     ["6C56EA1E00ED1431"] = "xitadomaisnadacomprovado",
+    ["3B61B2E926F42568"] = "fugan0sfalso",
 }
 -- ==============================================
 
