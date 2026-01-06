@@ -90,7 +90,6 @@ local keyMapping = {
     ["E2785B51D947CA19"] = "epsk.",
     ["A9BA8176C8A5B1EA"] = "epsk.",
     ["A005F9AF17109C5E"] = "epsk.",
-    ["0C44F83A059E4A89"] = "epsk.",
     ["593EA30B449E45B0"] = "epsk.",
     ["89A3870E5B3B8C6E"] = "rlkpixote00",
     ["126D1543911F8320"] = "twistedzex",
