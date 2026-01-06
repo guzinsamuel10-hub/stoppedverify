@@ -94,6 +94,7 @@ local keyMapping = {
     ["593EA30B449E45B0"] = "epsk.",
     ["89A3870E5B3B8C6E"] = "rlkpixote00",
     ["126D1543911F8320"] = "twistedzex",
+    ["4B032A9873B1F4CF"] = "aruan_xit",
 }
 -- ==============================================
 
