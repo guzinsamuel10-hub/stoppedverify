@@ -95,6 +95,7 @@ local keyMapping = {
     ["1B6396C1FBE1E45E"] = "justica3paz.",
     ["CB054447581690FD"] = "lipin157",
     ["88B2C84D894C1B8E"] = "julio.tralha.ofc",
+    ["9E0EA12D7A5FDF44"] = "epsk.",
 }
 -- ==============================================
 
