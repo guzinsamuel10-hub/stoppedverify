@@ -121,6 +121,7 @@ local VIP_KEYS = {
     ["VIP-D2D8BE88-EAF62E7A"] = true,
     ["VIP-D3F40D41-D4D98B37"] = true,
     ["VIP-C65AAA81-42548055"] = true,
+    ["VIP-A1B3DB24-7AB8018E"] = true,
 }
 
 -- util helpers
