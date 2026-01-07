@@ -91,7 +91,6 @@ local keyMapping = {
     ["A9BA8176C8A5B1EA"] = "epsk.",
     ["A005F9AF17109C5E"] = "epsk.",
     ["593EA30B449E45B0"] = "epsk.",
-    ["89A3870E5B3B8C6E"] = "rlkpixote00",
     ["4B032A9873B1F4CF"] = "aruan_xit",
     ["B769A84271DED708"] = "datdl011",
     ["52CFB3235B927A6B"] = "brabo.yt.ns7467",
