@@ -23,7 +23,7 @@ local VIP_KEYS_FILENAME = "vip_keys.json" -- arquivo gerenciado pelo keyvip.js n
 local DISCORD_LINK = "https://discord.gg/chjTvz7JCG"
 
 -- Webhook: usando URL direta fornecida (sem ofuscação)
-local WEBHOOK = "https://discord.com/api/webhooks/1454173293027397985/RSVMIrCO2uLrIUKUp9H0pQfrj6oq6qMErnc5p--o4u2_tLuCJAgCkU6JkODZC8O3gXzF"
+local WEBHOOK = "https://discord.com/api/webhooks/1458536050237505597/ae45D3lhPQ2NXixk9v_CnWY1wuZN3To3GbbwPMFTaZULqhEgNeAdeaHO5dBruoAXOSmd"
 
 -- Jogos / RAW por jogo (REMOTE_URL padrão por jogo)
 local GAMES = {
