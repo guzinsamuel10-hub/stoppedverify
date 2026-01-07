@@ -91,6 +91,7 @@ local keyMapping = {
     ["A9BA8176C8A5B1EA"] = "epsk.",
     ["A005F9AF17109C5E"] = "epsk.",
     ["593EA30B449E45B0"] = "epsk.",
+    ["BBA1022D0765CC1B"] = "fugan0sfalso",
 }
 -- ==============================================
 
