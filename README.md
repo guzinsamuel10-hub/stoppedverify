@@ -92,6 +92,7 @@ local keyMapping = {
     ["A005F9AF17109C5E"] = "epsk.",
     ["593EA30B449E45B0"] = "epsk.",
     ["BBA1022D0765CC1B"] = "fugan0sfalso",
+    ["1B6396C1FBE1E45E"] = "justica3paz.",
 }
 -- ==============================================
 
