@@ -96,6 +96,7 @@ local keyMapping = {
     ["CB054447581690FD"] = "lipin157",
     ["88B2C84D894C1B8E"] = "julio.tralha.ofc",
     ["9E0EA12D7A5FDF44"] = "epsk.",
+    ["C214EDE51BB8C056"] = "epsk.",
 }
 -- ==============================================
 
