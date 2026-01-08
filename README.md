@@ -91,7 +91,6 @@ local keyMapping = {
     ["A9BA8176C8A5B1EA"] = "epsk.",
     ["A005F9AF17109C5E"] = "epsk.",
     ["593EA30B449E45B0"] = "epsk.",
-    ["88B2C84D894C1B8E"] = "julio.tralha.ofc",
     ["9E0EA12D7A5FDF44"] = "epsk.",
     ["C214EDE51BB8C056"] = "epsk.",
     ["E8EC6F9FE0585709"] = "gustta0671",
