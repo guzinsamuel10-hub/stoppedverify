@@ -94,7 +94,8 @@ local keyMapping = {
     ["9E0EA12D7A5FDF44"] = "epsk.",
 
     ["KEY-UEU68ISZ"] = "232sds",
-    ["VIP-HC61QR73"] = "Aprovado via Discord: guhzin4k",}
+    ["VIP-HC61QR73"] = "Aprovado via Discord: guhzin4k",
+    ["VIP-XZ3H2XY0"] = "Aprovado via Discord: guhzin4k",}
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
