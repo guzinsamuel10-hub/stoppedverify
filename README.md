@@ -79,27 +79,8 @@ local keyMapping = {
     ["2xNAGANK01"] = "2xdosDEUSES",
     ["Dubemgstt"] = "<@1186421644730834974>",
     ["DUBEMGSTTY"] = "@Dubem",
-    ["05F0B3062BD09F5A"] = "aruan_xit",
-    ["09A3325CB0A723A1"] = "verdecabuloso_",
     ["VIP-E14D7AA5-14C829EE"] = "guhzin4k",
     ["GUGOSTOSAO"] = "guhzin4k",
-    ["024276590A3BD60E"] = "guhzin4k",
-    ["3D66BD5737E3942F"] = "guhzin4k",
-    ["4B1E60A00167B7BD"] = "epsk.",
-    ["F8495CED49F4BDDE"] = "epsk.",
-    ["E2785B51D947CA19"] = "epsk.",
-    ["A9BA8176C8A5B1EA"] = "epsk.",
-    ["A005F9AF17109C5E"] = "epsk.",
-    ["593EA30B449E45B0"] = "epsk.",
-    ["9E0EA12D7A5FDF44"] = "epsk.",
-
-    ["KEY-UEU68ISZ"] = "232sds",
-    ["VIP-HC61QR73"] = "Aprovado via Discord: guhzin4k",
-    ["VIP-XZ3H2XY0"] = "Aprovado via Discord: guhzin4k",
-    ["VIP-URKAMBG7"] = "Aprovado via Discord: guhzin4k",
-    ["VIP-NX5SHFMT"] = "Aprovado via Discord: guhzin4k",
-    ["VIP-XW262U0X"] = "Aprovado via Discord: guhzin4k",
-    ["KEY-XD8OLQFC"] = "Grátis: guhzin4k",}
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
@@ -107,28 +88,7 @@ local VIP_KEYS = {
     ["8D4945C3EF9E79D8"] = true, -- exemplo existente
     ["2XNAGANK01"] = true,
     ["DUBEMGSTTY"] = true,
-    ["VIP-0C6495E0-B8C6FE61"] = true,
-    ["VIP-49162DC8-FFD6D33D"] = true,
-    ["VIP-8EFB5E8F-A8084E6A"] = true,
     ["GUGOSTOSAO"] = true,
-    ["VIP-548EAED7-B3FE8085"] = true,
-    ["VIP-1C9907BD-A790E519"] = true,
-    ["VIP-9D7B99BF-86347682"] = true,
-    ["VIP-B9C03980-D05FE5A2"] = true,
-    ["VIP-D7B8D2B8-3502D699"] = true,
-    ["VIP-4220DB89-4B2711A9"] = true,
-    ["VIP-48346E8C-01D579A7"] = true,
-    ["VIP-A58DB6A9-BC0AEC0A"] = true,
-    ["VIP-2A0784DA-B530249A"] = true,
-    ["VIP-188B4076-25664262"] = true,
-    ["VIP-D2D8BE88-EAF62E7A"] = true,
-    ["VIP-D3F40D41-D4D98B37"] = true,
-    ["VIP-C65AAA81-42548055"] = true,
-    ["VIP-A1B3DB24-7AB8018E"] = true,
-    ["VIP-54979EB0-A4F8B044"] = true,
-    ["VIP-9A97D537-717A58E4"] = true,
-    ["VIP-F0F5FC70-92FF81A7"] = true,
-
     ["VIP-XW262U0X"] = true,}
 
 -- util helpers
