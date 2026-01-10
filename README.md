@@ -95,7 +95,8 @@ local keyMapping = {
     ["KEY-JT59B1UH"] = "Grátis (perm): gank2.0",
     ["KEY-GZNEUSV8"] = "Grátis (3h): aruan_xit",
     ["KEY-1R0LIQRH"] = "Grátis (3h): yuri7770426",
-    ["KEY-RNYUKLRN"] = "Grátis (3h): nandessfx",}
+    ["KEY-RNYUKLRN"] = "Grátis (3h): nandessfx",
+    ["VIP-66E3GDM2"] = ".yeezy77",}
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
@@ -107,7 +108,8 @@ local VIP_KEYS = {
     ["VIP-49162DC8-FFD6D33D"] = true,
     ["VIP-8EFB5E8F-A8084E6A"] = true,
     ["GUGOSTOSAO"] = true,
-    ["VIP-XW262U0X"] = true,}
+    ["VIP-XW262U0X"] = true,
+    ["VIP-66E3GDM2"] = true,}
 
 -- util helpers
 local function safeText(v) return tostring(v or "") end
