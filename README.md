@@ -92,7 +92,8 @@ local keyMapping = {
     ["KEY-M5L35SQ2"] = "Grátis (3h): gank2.0",
     ["KEY-A5MMW9SF"] = "Grátis (7h): gank2.0",
     ["KEY-MY6LQXXL"] = "Grátis (1d): gank2.0",
-    ["KEY-JT59B1UH"] = "Grátis (perm): gank2.0",}
+    ["KEY-JT59B1UH"] = "Grátis (perm): gank2.0",
+    ["KEY-GZNEUSV8"] = "Grátis (3h): aruan_xit",}
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
