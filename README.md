@@ -97,7 +97,8 @@ local keyMapping = {
     ["VIP-HC61QR73"] = "Aprovado via Discord: guhzin4k",
     ["VIP-XZ3H2XY0"] = "Aprovado via Discord: guhzin4k",
     ["VIP-URKAMBG7"] = "Aprovado via Discord: guhzin4k",
-    ["VIP-NX5SHFMT"] = "Aprovado via Discord: guhzin4k",}
+    ["VIP-NX5SHFMT"] = "Aprovado via Discord: guhzin4k",
+    ["VIP-XW262U0X"] = "Aprovado via Discord: guhzin4k",}
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
@@ -126,7 +127,8 @@ local VIP_KEYS = {
     ["VIP-54979EB0-A4F8B044"] = true,
     ["VIP-9A97D537-717A58E4"] = true,
     ["VIP-F0F5FC70-92FF81A7"] = true,
-}
+
+    ["VIP-XW262U0X"] = true,}
 
 -- util helpers
 local function safeText(v) return tostring(v or "") end
