@@ -81,6 +81,13 @@ local keyMapping = {
     ["DUBEMGSTTY"] = "@Dubem",
     ["VIP-E14D7AA5-14C829EE"] = "guhzin4k",
     ["GUGOSTOSAO"] = "guhzin4k",
+    ["KEY-UEU68ISZ"] = "232sds",
+    ["VIP-HC61QR73"] = "Aprovado via Discord: guhzin4k",
+    ["VIP-XZ3H2XY0"] = "Aprovado via Discord: guhzin4k",
+    ["VIP-URKAMBG7"] = "Aprovado via Discord: guhzin4k",
+    ["VIP-NX5SHFMT"] = "Aprovado via Discord: guhzin4k",
+    ["VIP-XW262U0X"] = "Aprovado via Discord: guhzin4k",
+    ["KEY-XD8OLQFC"] = "Grátis: guhzin4k",}
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
@@ -88,6 +95,9 @@ local VIP_KEYS = {
     ["8D4945C3EF9E79D8"] = true, -- exemplo existente
     ["2XNAGANK01"] = true,
     ["DUBEMGSTTY"] = true,
+    ["VIP-0C6495E0-B8C6FE61"] = true,
+    ["VIP-49162DC8-FFD6D33D"] = true,
+    ["VIP-8EFB5E8F-A8084E6A"] = true,
     ["GUGOSTOSAO"] = true,
     ["VIP-XW262U0X"] = true,}
 
