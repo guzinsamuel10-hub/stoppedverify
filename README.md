@@ -87,7 +87,8 @@ local keyMapping = {
     ["VIP-URKAMBG7"] = "Aprovado via Discord: guhzin4k",
     ["VIP-NX5SHFMT"] = "Aprovado via Discord: guhzin4k",
     ["VIP-XW262U0X"] = "Aprovado via Discord: guhzin4k",
-    ["KEY-XD8OLQFC"] = "Grátis: guhzin4k",}
+    ["KEY-XD8OLQFC"] = "Grátis: guhzin4k",
+    ["KEY-ZOO15EIM"] = "Grátis (3h): guhzin4k",}
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
