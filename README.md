@@ -30,7 +30,7 @@ local GAMES = {
     [12990938829] = { name="HazePVP", raw="https://raw.githubusercontent.com/guzinsamuel10-hub/stoppedhaze/refs/heads/main/README.md" },
     [115054138215106] = { name="Sitonia", raw="https://raw.githubusercontent.com/guzinsamuel10-hub/sitonia-x-Gank/refs/heads/main/README.md" },
     [18110038107] = { name="America PVP", raw="https://raw.githubusercontent.com/guzinsamuel10-hub/stopped-america/refs/heads/main/README.md" },
-    [99001115434148] = { name="FluxoPvp", raw="https://raw.githubusercontent.com/guzinsamuel10-hub/FLUXOVIP/refs/heads/main/README.md" },
+    [99001115434148] = { name="FluxoPvp", raw="https://raw.githubusercontent.com/guzinsamuel10-hub/fluxovIP2/refs/heads/main/README.md" },
 }
 local DEFAULT_GAME = { name="Default", raw="https://raw.githubusercontent.com/guzinsamuel10-hub/stoppedhaze/refs/heads/main/README.md" }
 local PLACE_ID = game.PlaceId or 0
@@ -47,7 +47,7 @@ local VIP_REMOTE_URLS = {
 local VIP_GAME_SCRIPTS = {
     -- Exemplo:
     -- [18110038107] = { "https://raw.githubusercontent.com/username/repo/branch/vip_america.lua" },
-     [99001115434148] = { "https://raw.githubusercontent.com/guzinsamuel10-hub/Fkuxoingang/refs/heads/main/README.md" },
+     [99001115434148] = { "https://raw.githubusercontent.com/guzinsamuel10-hub/FLUXOVIP/refs/heads/main/README.md" },
 }
 
 -- Jogos que são "VIP only" — apenas keys marcadas como VIP terão acesso a estes lugares (opcional)
