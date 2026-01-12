@@ -102,7 +102,8 @@ local keyMapping = {
     ["KEY-XD0IYGPD"] = "Grátis (1d): ilusaodo7",
     ["KEY-EKHA43C7"] = "Grátis (3d): ilusaodo7",
     ["KEY-NRWOXLB1"] = "Grátis (perm): ilusaodo7",
-    ["VIP-9K36STS7"] = "ilusaodo7",}
+    ["VIP-9K36STS7"] = "ilusaodo7",
+    ["KEY-13QTVGPN"] = "Grátis (7h): nandessfx",}
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
