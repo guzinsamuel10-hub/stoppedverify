@@ -106,7 +106,8 @@ local keyMapping = {
     ["KEY-13QTVGPN"] = "Grátis (7h): nandessfx",
     ["KEY-GDW1NX0J"] = "Grátis (1d): vtziin.7sx.",
     ["KEY-BZGI6AAH"] = "Grátis (7h): nino18374",
-    ["KEY-H9FL965U"] = "Grátis (perm): nino18374",}
+    ["KEY-H9FL965U"] = "Grátis (perm): nino18374",
+    ["KEY-CHCUDR5C"] = "Grátis (3h): cleyton0441",}
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
