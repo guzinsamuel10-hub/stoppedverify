@@ -113,7 +113,8 @@ local keyMapping = {
     ["KEY-6N8V76N6"] = "Grátis (perm): reipele321",
     ["KEY-AE9OPOU6"] = "Grátis (1d): reipele321",
     ["KEY-BIYJ6O4I"] = "Grátis (perm): nikollas0680",
-    ["KEY-6GD1HYV7"] = "Grátis (perm): nino18374",}
+    ["KEY-6GD1HYV7"] = "Grátis (perm): nino18374",
+    ["KEY-9B3HZCC8"] = "Grátis (perm): baby_37788",}
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
