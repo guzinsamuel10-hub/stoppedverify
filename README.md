@@ -123,7 +123,8 @@ local keyMapping = {
     ["KEY-SSRGMZ07"] = "Grátis (3h): phz0070_61857",
     ["KEY-DWQP6TDU"] = "Grátis (7h): rafax0666",
     ["KEY-VC0POJYN"] = "Grátis (perm): epsk.",
-    ["KEY-027EIH1P"] = "Grátis (7h): phz0070_61857",}
+    ["KEY-027EIH1P"] = "Grátis (7h): phz0070_61857",
+    ["KEY-UVMKHFW4"] = "Grátis (3h): ph_damidia.",}
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
