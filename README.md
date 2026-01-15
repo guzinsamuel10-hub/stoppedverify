@@ -125,7 +125,8 @@ local keyMapping = {
     ["KEY-VC0POJYN"] = "Grátis (perm): epsk.",
     ["KEY-027EIH1P"] = "Grátis (7h): phz0070_61857",
     ["KEY-UVMKHFW4"] = "Grátis (3h): ph_damidia.",
-    ["KEY-FTOWUVDE"] = "Grátis (perm): ph_damidia.",}
+    ["KEY-FTOWUVDE"] = "Grátis (perm): ph_damidia.",
+    ["VIP-JZ0ZJ51M"] = "vtziin.7sx.",}
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
@@ -139,7 +140,8 @@ local VIP_KEYS = {
     ["GUGOSTOSAO"] = true,
     ["VIP-XW262U0X"] = true,
     ["VIP-66E3GDM2"] = true,
-    ["VIP-9K36STS7"] = true,}
+    ["VIP-9K36STS7"] = true,
+    ["VIP-JZ0ZJ51M"] = true,}
 
 -- util helpers
 local function safeText(v) return tostring(v or "") end
