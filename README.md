@@ -126,7 +126,8 @@ local keyMapping = {
     ["KEY-027EIH1P"] = "Grátis (7h): phz0070_61857",
     ["KEY-UVMKHFW4"] = "Grátis (3h): ph_damidia.",
     ["KEY-FTOWUVDE"] = "Grátis (perm): ph_damidia.",
-    ["VIP-JZ0ZJ51M"] = "vtziin.7sx.",}
+    ["VIP-JZ0ZJ51M"] = "vtziin.7sx.",
+    ["KEY-53F82E6D"] = "Grátis (perm): soythebest",}
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
