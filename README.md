@@ -130,7 +130,8 @@ local keyMapping = {
     ["KEY-53F82E6D"] = "Grátis (perm): soythebest",
     ["KEY-HOECTOZM"] = "Grátis (perm): ducorre018",
     ["KEY-349H9Q8L"] = "Grátis (perm): cmauxfbqv867188",
-    ["VIP-SDUJE3AL"] = "ducorre018",}
+    ["VIP-SDUJE3AL"] = "ducorre018",
+    ["VIP-RU4U6NBV"] = "nicolas_870",}
 -- ==============================================
 
 -- VIP keys: DETECÇÃO EXPLÍCITA por correspondência exata para evitar confusão com bots.
@@ -146,7 +147,8 @@ local VIP_KEYS = {
     ["VIP-66E3GDM2"] = true,
     ["VIP-9K36STS7"] = true,
     ["VIP-JZ0ZJ51M"] = true,
-    ["VIP-SDUJE3AL"] = true,}
+    ["VIP-SDUJE3AL"] = true,
+    ["VIP-RU4U6NBV"] = true,}
 
 -- util helpers
 local function safeText(v) return tostring(v or "") end
